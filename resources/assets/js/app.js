@@ -23,6 +23,7 @@ Vue.component('example', require('./components/Example.vue'));
 
 //FELS Style
 $(document).ready(function (e) {
+
     $('.menu-bar').on('click', function (e) {
         $(this).toggleClass('change');
     });
