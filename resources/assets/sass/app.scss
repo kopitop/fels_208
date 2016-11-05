@@ -16,14 +16,14 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@font-face{
+@font-face {
     font-family: Megrim;
     src: url('../fonts/Megrim.ttf');
 }
-body{
+body {
     color: #fff;
 }
-.banner{
+.banner {
     min-height: 500px;
     background-image: url('../images/banner-bg.jpg');
     background-size: cover;
@@ -31,44 +31,47 @@ body{
     padding-top: 50px;
     overflow: hidden;
 }
-.banner .header .left{
+.banner .header .left {
     font-family: Megrim;
     color: #fff;
 }
-.banner .header .left a{
+.banner .header .left a.logo {
     font-size: 46px;
     margin-bottom: 0;
     border-bottom: solid 1px #fff;
     line-height: 46px;
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
-.banner .header .left p:last-child{
+.banner .header .left p:last-child {
     margin-top: 0;
     font-size: 14px;
 }
-.banner .header .right{
+.banner .header .right {
     position: relative;
 }
-.banner .header .right .user{
+.banner .header .right .user,
+.banner .header .right .logged {
     color: #fff;
     display: block;
     font-size: 16px;
     position: absolute;
     right: 100px;
     top: 11px;
-    width: 120px;
+    width: 200px;
     cursor: pointer;
 }
-.banner .header .right .user p{
-    margin:0;
+.banner .header .right .user p {
+    margin: 0;
     line-height: 16px;
 }
 .menu-bar {
     display: inline-block;
     cursor: pointer;
 }
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     border-radius: 2px;
     width: 35px;
     height: 5px;
@@ -76,38 +79,38 @@ body{
     margin: 6px 0;
     transition: 0.4s;
 }
-
 /* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
 
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
 /* Fade out the second bar */
+
 .change .bar2 {
     opacity: 0;
 }
-
 /* Rotate last bar */
+
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
-.banner .welcome{
+.banner .welcome {
     margin-top: 50px;
     color: #fff;
     position: relative;
 }
-.banner .welcome h3{
+.banner .welcome h3 {
     font-size: 100px;
     font-family: Megrim;
     font-weight: bold;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.3), -2px 2px 2px rgba(0,0,0,.3);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3), -2px 2px 2px rgba(0, 0, 0, .3);
 }
-.decoration-line{
+.decoration-line {
     position: relative;
 }
-.banner .welcome .decoration-line:before{
+.banner .welcome .decoration-line:before {
     content: '';
     width: 50px;
     height: 1px;
@@ -117,7 +120,7 @@ body{
     left: calc( 50% - 200px);
     top: 10px;
 }
-.banner .welcome .decoration-line:after{
+.banner .welcome .decoration-line:after {
     content: '';
     width: 50px;
     height: 1px;
@@ -127,10 +130,10 @@ body{
     right: calc( 50% - 200px);
     top: 10px;
 }
-.banner .welcome h3{
+.banner .welcome h3 {
     margin-bottom: 20px;
 }
-.banner .welcome a.elf-button{
+.banner .welcome a.elf-button {
     border: solid 1px #fff;
     text-decoration: none;
     padding: 10px 25px;
@@ -138,27 +141,29 @@ body{
     font-weight: bold;
     border-radius: 2px;
 }
-.info, .categories, footer{
+.info,
+.categories,
+footer {
     z-index: 999;
     background-color: #5d4037
 }
-.info p{
+.info p {
     margin-top: 20px;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
     display: inline-block;
     width: 50%;
 }
-.info{
+.info {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.cat-box{
+.cat-box {
     height: 200px;
     position: relative;
     overflow: hidden;
     padding: 0;
 }
-.cat-box figcaption{
+.cat-box figcaption {
     background-color: #3e2723;
     text-align: center;
     position: absolute;
@@ -168,62 +173,62 @@ body{
     opacity: 0;
     transition: .5s;
 }
-.cat-box:hover figcaption{
+.cat-box:hover figcaption {
     opacity: .7;
 }
-.cat-box figcaption p{
+.cat-box figcaption p {
     line-height: 200px;
     font-weight: bold;
     font-size: 22px;
 }
-.cat-box img{
+.cat-box img {
     height: 100%;
     width: 100%;
 }
-footer{
+footer {
     padding-top: 100px;
     padding-bottom: 20px;
 }
-footer .logo{
+footer .logo {
     font-family: Megrim;
     color: #fff;
 }
-footer .logo p:first-child{
+footer .logo p:first-child {
     font-size: 38px;
     margin-bottom: 0;
     border-bottom: solid 1px #fff;
     line-height: 46px;
     display: inline-block;
 }
-footer .logo p:last-child{
+footer .logo p:last-child {
     margin-top: 0;
     font-size: 10px;
     display: block;
     width: 143px;
 }
-footer .copyright ul{
+footer .copyright ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-top: 50px;
     font-size: 12px;
 }
-footer .copyright ul li{
+footer .copyright ul li {
     float: left;
     border-right: solid 1px #fff;
-    padding:0 10px;
+    padding: 0 10px;
 }
-footer .copyright ul li:first-child{
+footer .copyright ul li:first-child {
     padding-left: 0;
 }
-footer .copyright ul li:last-child{
+footer .copyright ul li:last-child {
     border-right: 0;
 }
-footer .social-logo{
+footer .social-logo {
     margin-left: 15px;
     width: 48px;
 }
-.fullscreen-menu{
+.fullscreen-menu {
     z-index: 999;
     content: '';
     display: none;
@@ -232,49 +237,44 @@ footer .social-logo{
     position: fixed;
     width: 80vw;
     height: 80vh;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
 }
-.login-modal{
+.login-modal {
     color: #000;
 }
-.modal-content{
+.modal-content {
     border-radius: 2px;
 }
 /* Link styles */
-.login-modal a, a:visited, a:hover {
-  color: #e74c3c;
-  text-decoration: none;
+
+.login-modal a,
+a:visited,
+a:hover {
+    color: #e74c3c;
+    text-decoration: none;
 }
 .login-modal a:hover {
-  color: #a05772;
+    color: #a05772;
 }
-
 /* Styles for buttons container */
-.login-modal .social-container {
-    left: 50%;
-    margin: -86px 0 0 -103px;
-    position: absolute;
-    top: 50%; 
-}
-
 /* Facebook */
+
 .login-modal .fb-icon-bg {
     background: #354f88;
     height: 37px;
     margin: 0 0 -37px 0;
-    width: 41px; 
+    width: 41px;
 }
 .login-modal .fb-icon-bg:after {
-  display: block;
-  padding: 9px 10px 5px 15px;
+    display: block;
+    padding: 9px 10px 5px 15px;
 }
-
 .login-modal .fb-bg {
     background: #3b5998;
     display: block;
     height: 37px;
     margin: 0 0 30px 41px;
-    width: 166px; 
+    width: 166px;
 }
 .login-modal .fb-bg:after {
     color: #fff;
@@ -285,66 +285,66 @@ footer .social-logo{
     position: relative;
     text-transform: uppercase;
     top: 22%;
-    width: 41px; 
+    width: 41px;
 }
-.login-modal .fb-bg:hover{
-  cursor: pointer;
+.login-modal .fb-bg:hover {
+    cursor: pointer;
 }
-.login-modal .fb-bg:active{
-  background: #354f88;
+.login-modal .fb-bg:active {
+    background: #354f88;
 }
-
 /* Twitter */
+
 .login-modal .twi-icon-bg:after {
-  display: block;
-  padding: 11px 10px 6px 11px;
+    display: block;
+    padding: 11px 10px 6px 11px;
 }
 .login-modal .twi-icon-bg {
     background: #40a2d1;
     height: 37px;
     margin: 0 0 -37px 0;
-    width: 41px; 
+    width: 41px;
 }
 .login-modal .twi-bg {
     background: #45b0e3;
     height: 37px;
     margin: 0 0 30px 41px;
-    width: 166px; 
+    width: 166px;
 }
 .login-modal .twi-bg:after {
     color: #fff;
     content: "via twitter";
     font-family: 'Oswald', sans-serif;
     height: 37px;
-  left: 11%;
+    left: 11%;
     position: relative;
-  text-transform: uppercase;
+    text-transform: uppercase;
     top: 22%;
-  width: 41px; 
+    width: 41px;
 }
 .login-modal .twi-bg:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .login-modal .twi-bg:active {
-  background: #40a2d1;
+    background: #40a2d1;
 }
-
 /* Google+ */
+
 .login-modal .g-icon-bg:after {
-  display: block;
-  padding: 11px 10px 6px 13px;
+    display: block;
+    padding: 11px 10px 6px 13px;
 }
 .login-modal .g-icon-bg {
     background: #ce3e26;
     height: 37px;
     margin: 0 0 -37px 0;
-    width: 41px; 
+    width: 41px;
 }
 .login-modal .g-bg {
     background: #de4c34;
     height: 37px;
     margin-left: 41px;
-    width: 166px; 
+    width: 166px;
 }
 .login-modal .g-bg:after {
     color: #fff;
@@ -355,104 +355,109 @@ footer .social-logo{
     position: relative;
     text-transform: uppercase;
     top: 22%;
-    width: 41px; 
+    width: 41px;
 }
 .login-modal .g-bg:active {
-  background: #ce3e26;
+    background: #ce3e26;
 }
 .login-modal .g-bg:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
-.login-modal .modal-body{
-    height: 300px;
+.login-modal .modal-body {
+    padding: 50px;
 }
-.login-modal .modal-body .left, .login-modal .modal-body .right{
-    margin-top: 30px;
+.login-modal .modal-body .left,
+.login-modal .modal-body .right {
     height: 80%;
     padding: 0px;
 }
+.login-modal .modal-body .left {
+    margin-top: 25px;
+}
 .login-modal .fb-icon-bg i,
 .login-modal .twi-icon-bg i,
-.login-modal .g-icon-bg i{
+.login-modal .g-icon-bg i {
     font-size: 24px;
     line-height: 37px;
 }
-label{
+label {
     margin-bottom: 2px;
 }
-.form-group{
+.form-group {
     margin-bottom: 7px;
 }
-.login-modal .radio, .checkbox{
+.login-modal .radio,
+.checkbox {
     margin-top: 0;
     margin-bottom: 5px;
 }
-.login-modal .btn{
+.login-modal .btn {
     height: 37px;
     border-radius: 0;
 }
-.login-modal .form-control{
+.login-modal .form-control {
     height: 37px;
     width: 207px;
     border-radius: 0;
 }
-.sign-up-button{
+.sign-up-button {
     margin-left: 10px;
 }
-.sign-up.modal-body{
+.sign-up.modal-body {
     display: none;
     padding: 50px;
 }
 .sign-up.modal-body .left,
-.sign-up.modal-body .right{
+.sign-up.modal-body .right {
     margin-top: 0;
     margin-bottom: 30px;
     color: #000;
     font-family: sans-serif;
 }
-.fullscreen-menu ul{
+.fullscreen-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-top: 100px;
 }
-.fullscreen-menu ul li{
+.fullscreen-menu ul li {
     margin-bottom: 20px;
 }
-.fullscreen-menu ul li a{
+.fullscreen-menu ul li a {
     font-size: 48px;
     color: #fff;
     font-weight: bold;
 }
-.fullscreen-menu ul li a:hover{
-    color: rgba(255,255,255,.5);
+.fullscreen-menu ul li a:hover {
+    color: rgba(255, 255, 255, .5);
 }
-.subview{
+.subview {
     background-color: #D7CCC8;
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: #5D4037;
 }
-.subview .sidebar ul{
+.subview .sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.subview .sidebar li{
+.subview .sidebar li {
     margin-bottom: 10px;
     text-align: center;
 }
-.content{
+.content {
     min-height: 500px;
     border-left: solid 1px #3E2723;
     padding-left: 50px;
 }
-.content h3{
+.content h3 {
     margin-top: 0;
 }
-.content .title{
+.content .title {
     position: relative;
 }
-.content .title:after{
+.content .title:after {
     left: -50px;
     position: absolute;
     content: '';
@@ -461,3 +466,94 @@ label{
     display: block;
     background-color: #3E2723;
 }
+.logged,
+.logged ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.logged ul li {
+    padding: 5px 15px;
+    background-color: #fff;
+}
+.logged ul {
+    display: none;
+}
+.logged>li:hover ul {
+    display: block;
+    position: relative;
+    top: 10px;
+}
+.card-1 {
+    box-shadow: -2px 2px 10px #888888;
+}
+.logged a {
+    color: rgba(0, 0, 0, .87);
+}
+.login-modal .login .not-yet-login {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+.help-block {
+    font-size: 10px;
+    color: #ff0000;
+}
+.button-action {
+    clear: both;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #A1887F;
+    border-color: #3E2723;
+    border-radius: 0;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #795548;
+    border-color: #3E2723;
+    border-radius: 0;
+}
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active.focus,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active.focus,
+.open > .btn-primary.dropdown-toggle:hover,
+.open > .btn-primary.dropdown-toggle:focus,
+.open > .btn-primary.dropdown-toggle.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .btn-primary.dropdown-toggle,
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: #795548;
+    border-color: #3E2723;
+    border-radius: 0;
+}
+.form-control:focus {
+    border-color: #D7CCC8;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 136, 127, 0.6);
+    border-radius: 0;
+}
+.panel-default {
+    border-color: #D7CCC8;
+    border-radius: 0;
+}
+.panel-default > .panel-heading {
+    color: #333333;
+    background-color: #fff;
+    border-color: #D7CCC8;
+    border-radius: 0;
+}
+.form-control {
+    border: 1px solid #D7CCC8;
+    border-radius: 0;
+}
+.not-yet-login {
+    margin-bottom: 30px;
+    color: red;
+    font-weight: bolder;
+}   

@@ -24,4 +24,11 @@ return [
     'about-us' => 'ABOUT US',
     'copyright' => 'Copyright 2016 By HiepNM &amp; HieuNV',
     'license' => 'All Rights Reserved',
+    'hello' => 'Hello,',
+    'logout' => 'Logout',
+    'forgot-password' => 'Forgot Your Password?',
+    'send-password-link' => 'Send Password Link',
+    'reset-password' => 'Reset Password',
+    'not-yet-login' => 'You need to login before access that section!',
+    'be-right-back' => 'Be right back.',
 ];
