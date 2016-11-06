@@ -69,15 +69,15 @@
                                                         <div class="fb-icon-bg text-center">
                                                             <i class="fa fa-facebook" aria-hidden="true"></i>
                                                         </div>
-                                                        <a href="{{ url('http://www.facebook.com') }}"><div class="fb-bg"></div></a>
+                                                        <a href="{{ url('login/facebook') }}"><div class="fb-bg"></div></a>
                                                         <div class="twi-icon-bg text-center">
                                                             <i class="fa fa-twitter" aria-hidden="true"></i>
                                                         </div>
-                                                        <a href="{{ url('http://www.twitter.com') }}"><div class="twi-bg"></div></a>
+                                                        <a href="{{ url('login/twitter') }}"><div class="twi-bg"></div></a>
                                                         <div class="g-icon-bg text-center">
                                                             <i class="fa fa-google" aria-hidden="true"></i>
                                                         </div>
-                                                        <a href="{{ url('http://www.google.com') }}"><div class="g-bg"></div></a>
+                                                        <a href="{{ url('login/google') }}"><div class="g-bg"></div></a>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 right">

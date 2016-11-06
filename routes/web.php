@@ -26,6 +26,15 @@ Route::group(['namespace' => 'Auth'], function () {
     Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm');
 
     Route::post('register', 'RegisterController@register');
+
+    Route::get('login/{provider}', 'LoginController@redirectToProvider');
+    Route::get('auth/callback/{provider}', 'LoginController@handleProviderCallback');
 });
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('check', function (){
+    $user = App\Models\User::find(1);
+    Auth::login($user);
+    dd(Auth::check());
+});

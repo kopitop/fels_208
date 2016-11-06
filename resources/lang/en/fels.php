@@ -31,4 +31,5 @@ return [
     'reset-password' => 'Reset Password',
     'not-yet-login' => 'You need to login before access that section!',
     'be-right-back' => 'Be right back.',
+    'create-password' => 'Create Password',
 ];
