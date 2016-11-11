@@ -60,6 +60,6 @@ class Handler extends ExceptionHandler
             return response()->json(['error' => 'Unauthenticated.'], 401);
         }
 
-        return redirect()->guest('/')->with('not-yet-login', trans('fels.not-yet-login'));
+        return redirect()->guest('/')->with('not-yet-login', trans('fels.status.not-yet-login'));
     }
 }

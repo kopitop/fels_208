@@ -36,6 +36,7 @@ return [
         'sign-up' => 'Sign Up',
         'reset' => 'Reset',
         'back-to-login' => 'Back to login',
+        'remove' => 'Remove',
     ],
     'status' => [
         'nothing-to-show' => 'There is not any content, you can create the first one',

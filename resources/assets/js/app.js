@@ -109,7 +109,40 @@ $(document).ready(function (e) {
 
     $('#upload-photo').on('change', function (e) {
         previewFile();
-        $('.edit-photo-container p').html($previewStatus);
-    })
+        $('.edit-photo-container p').html(previewStatus);
+    });
+
+    //Add and remove answer
+    function addOrRemoveAnswer () {
+        var i = $('#answers input[type="text"]').length;
+        var answers = $('#answers');
+
+        var addAnswer = function () {
+            var newAnswer = '<div class="answer-container">\
+            <label>' + label + '</label>\
+            <input type="text" class="form-control" name="answer['+ i +']">\
+            <span>' + isCorrect + '</span>\
+            <input type="checkbox" name="is_correct['+ i +']"/>\
+            <a class="btn btn-default remove-answer" href="Javascript:;">' + remove + '</a>\
+            </div>\
+            ';
+            $(newAnswer).appendTo(answers);
+            i++;
+
+            return false;
+        }
+
+        $('#addAnswer').on('click', addAnswer);
+
+        $(document).on('click', '.remove-answer', function() { 
+            if( i > 1 ) {
+                $(this).parents('.answer-container').remove();
+                i--;
+            }
+            return false;
+        });
+    };
+
+    addOrRemoveAnswer();
 
 })
