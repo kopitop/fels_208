@@ -118,6 +118,7 @@ $(document).ready(function (e) {
         var answers = $('#answers');
 
         var addAnswer = function () {
+            var remove = "{{ trans('word.remove') }}";
             var newAnswer = '<div class="answer-container">\
             <label>' + label + '</label>\
             <input type="text" class="form-control" name="answer['+ i +']">\

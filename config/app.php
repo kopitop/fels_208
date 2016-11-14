@@ -234,7 +234,6 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
-
     ],
 
 ];

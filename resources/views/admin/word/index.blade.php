@@ -44,7 +44,7 @@
         <td><a href="{{ action('Admin\WordsController@show', ['id' => $word->id]) }}">{{ $word->content }}</a></td>
         <td><a href="{{ action('Admin\CategoriesController@show', ['id' => $word->category->id]) }}">{{ $word->category->name }}</a></td>
         <td>
-            <a href="{{ action('Admin\CategoriesController@edit', ['id' => $word->id]) }}" class="btn btn-default">{{ trans('fels.button.edit') }}</a>
+            <a href="{{ action('Admin\WordsController@edit', ['id' => $word->id]) }}" class="btn btn-default">{{ trans('fels.button.edit') }}</a>
             {!! Form::open(['route' => ['word.destroy', $word->id], 'method' => 'delete']) !!}
                 <button onclick="return confirm('{{ trans('word.delete.confirm') }}')" type="submit" class="btn btn-default">{{ trans('fels.button.delete') }}</button>
             {!! Form::close() !!}

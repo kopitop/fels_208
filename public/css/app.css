@@ -8743,4 +8743,7 @@ body.error-page {
 .form-control-static.answer span {
   color: #FF0000; }
 
+.answer-container input {
+  display: inline-block; }
+
 /*# sourceMappingURL=app.css.map */
