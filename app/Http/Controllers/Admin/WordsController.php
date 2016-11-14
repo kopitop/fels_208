@@ -21,7 +21,7 @@ class WordsController extends BaseController
      */
     public function index()
     {
-        $this->viewData['words'] = Word::paginate(config('fels.limit.list_in_admin'));
+        $this->viewData['words'] = Word::with('category')->paginate(config('fels.limit.list_in_admin'));
         
         return view('admin.word.index', $this->viewData);
     }
@@ -55,7 +55,14 @@ class WordsController extends BaseController
      */
     public function show($id)
     {
-        //
+        //If inexistent redirect 404
+        $word = Word::findOrFail($id);
+
+        //Assign to view data
+        $this->viewData['word'] = $word;
+        $this->viewData['answers'] = $word->answers()->get();
+
+        return view('admin.word.detail', $this->viewData);
     }
 
     /**

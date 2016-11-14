@@ -42,7 +42,7 @@
     <tr>
         <td>{{ $word->id }}</td>
         <td><a href="{{ action('Admin\WordsController@show', ['id' => $word->id]) }}">{{ $word->content }}</a></td>
-        <td><a href="{{ action('Admin\CategoriesController@show', ['id' => $word->category()->first()->id]) }}">{{ $word->category()->first()->name }}</a></td>
+        <td><a href="{{ action('Admin\CategoriesController@show', ['id' => $word->category->id]) }}">{{ $word->category->name }}</a></td>
         <td>
             <a href="{{ action('Admin\CategoriesController@edit', ['id' => $word->id]) }}" class="btn btn-default">{{ trans('fels.button.edit') }}</a>
             {!! Form::open(['route' => ['word.destroy', $word->id], 'method' => 'delete']) !!}
