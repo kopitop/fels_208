@@ -32,4 +32,14 @@ class Word extends Model
     {
         return $this->hasMany('App\Models\Answer');
     }
+
+    public function delete()
+    {
+        // delete all associated answers
+        $this->answers()->delete();
+
+        // delete the word
+        return parent::delete();
+    }
+
 }

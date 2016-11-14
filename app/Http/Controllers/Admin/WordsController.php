@@ -168,6 +168,14 @@ class WordsController extends BaseController
      */
     public function destroy($id)
     {
-        //
+        //If inexist redirect 404
+        $word = Word::findOrFail($id);
+
+        //Delete all answers associated to the word
+        if ($word->delete()) {
+            return redirect()->action('Admin\WordsController@index')->withSuccess(trans('word.delete.success')); 
+        }
+
+        return redirect()->action('Admin\WordsController@index')->withSuccess(trans('word.delete.failed'));
     }
 }

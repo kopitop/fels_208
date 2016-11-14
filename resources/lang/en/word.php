@@ -22,5 +22,7 @@ return [
     'delete' => [
         'success' => 'Deleted succcessfully',
         'confirm' => 'Are you sure to delete this word',
+        'failed' => 'Failed to delete that word due to a system error',
     ],
+    'true-answer' => 'This is true answer',
 ];
