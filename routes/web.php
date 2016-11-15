@@ -41,8 +41,15 @@ Route::group(['middleware' => 'admin', 'prefix' => 'admin', 'namespace' => 'Admi
     Route::resource('word', 'WordsController');
 });
 
-Route::group(['namespace' => 'User', 'middleware'=> 'auth'], function() {
+Route::group(['namespace' => 'Web', 'middleware'=> 'auth'], function() {
     Route::resource('profile', 'ProfilesController', ['except' => [
         'create', 'store', 'delete',
+    ]]);
+    Route::resource('category', 'CategoriesController', ['only' => [
+        'index', 'show',
+    ]]);
+    Route::get('lesson/do/{category_id}', 'LessonsController@doLesson');
+    Route::resource('lesson', 'LessonsController', ['only' => [
+        'index', 'show', 'store',
     ]]);
 });

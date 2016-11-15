@@ -8746,4 +8746,8 @@ body.error-page {
 .answer-container input {
   display: inline-block; }
 
+.category-intro {
+  padding: 20px 0;
+  border-bottom: solid 1px #000; }
+
 /*# sourceMappingURL=app.css.map */

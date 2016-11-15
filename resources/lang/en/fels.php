@@ -37,6 +37,8 @@ return [
         'reset' => 'Reset',
         'back-to-login' => 'Back to login',
         'remove' => 'Remove',
+        'learn' => 'Learning',
+        'done' => 'Done',
     ],
     'status' => [
         'nothing-to-show' => 'There is not any content, you can create the first one',

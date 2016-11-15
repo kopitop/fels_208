@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Admin\BaseController;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCategory;
 use App\Http\Requests\UpdateCategory;
 use App\Models\Category;
@@ -12,7 +12,7 @@ use DB;
 use Log;
 use Storage;
 
-class CategoriesController extends BaseController
+class CategoriesController extends Controller
 {
     public function __construct()
     {

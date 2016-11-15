@@ -24,5 +24,4 @@ return [
         'upload' => 'Click to upload new image',
         'change-photo' => 'Please click Edit button to submit photo change',
     ],
-    'click-to-view' => 'Click to view our categories',
 ];
