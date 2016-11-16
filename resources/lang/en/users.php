@@ -38,4 +38,10 @@ return [
         2 => 'Admin',
         3 => 'SuperAdmin',
     ],
+    'user-follow' => [
+        'follow' => 'Follow',
+        'unfollow' => 'Unfollow',
+        'follow-error' => 'Follow Failed!',
+        'unfollow-error' => 'Unfollow Failed!',
+    ],
 ];

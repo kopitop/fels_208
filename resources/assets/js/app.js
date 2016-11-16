@@ -146,4 +146,13 @@ $(document).ready(function (e) {
 
     addOrRemoveAnswer();
 
+    $('#follow').on('click', function () {
+        event.preventDefault (); 
+        $('#follow-form').submit();
+    });
+
+    $('#unfollow').on('click', function () {
+        event.preventDefault (); 
+        $('#unfollow-form').submit();
+    });
 })
