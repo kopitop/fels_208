@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Word;
 use Input;
+use PDF;
 
 class WordsController extends Controller
 {
@@ -24,5 +25,16 @@ class WordsController extends Controller
         $this->viewData['words'] = Word::search($keyword)->paginate(config('word.limit.list_in_web'));
 
         return view('web.word.index', $this->viewData);
+    }
+
+    public function download(Request $request)
+    {
+        $keyword = $request->input('keyword-download');
+
+        $data = Word::search($keyword)->get();
+
+        $pdf = PDF::loadView('web.word.download', ['data' => $data]);
+
+        return $pdf->download(config('word.file-name'));
     }
 }

@@ -19,6 +19,12 @@
                 </div>
             </div> <!-- end of searchbar -->
         {!! Form::close() !!}
+        <div class="form-group">
+            {!! Form::open(['url' => route('download'), 'method' => 'post']) !!}
+                {!! Form::hidden('keyword-download') !!}
+                {!! Form::submit(trans('fels.button.download')) !!}
+            {!! Form::close() !!}
+        </div>
     </div>
 </div>
 <div class="row wordlist">

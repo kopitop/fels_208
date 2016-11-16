@@ -155,4 +155,8 @@ $(document).ready(function (e) {
         event.preventDefault (); 
         $('#unfollow-form').submit();
     });
+
+    //Assign keyword
+    var keyword = $('.subview .content .search input').val();
+    $('input[name = "keyword-download"]').val(keyword);
 })

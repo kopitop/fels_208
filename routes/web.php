@@ -57,6 +57,8 @@ Route::group(['namespace' => 'Web', 'middleware'=> 'auth'], function() {
         'index', 'show', 'store',
     ]]);
     Route::get('wordlist', 'WordsController')->name('wordlist');
+    Route::post('download', 'WordsController@download')->name('download');
+
     Route::post('/follow/{id}', 'FollowsController@follow');
     Route::post('/unfollow/{id}', 'FollowsController@unfollow');
 });

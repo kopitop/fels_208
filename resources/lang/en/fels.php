@@ -43,6 +43,7 @@ return [
         'learn' => 'Learning',
         'done' => 'Done',
         'back-to-list' => 'Back to list',
+        'download' => 'Download',
     ],
     'status' => [
         'nothing-to-show' => 'There is not any content, you can create the first one',

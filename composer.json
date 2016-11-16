@@ -12,7 +12,8 @@
         "doctrine/dbal": "^2.5",
         "barryvdh/laravel-debugbar": "^2.3",
         "laravel/scout": "^1.1",
-        "algolia/algoliasearch-client-php": "^1.11"
+        "algolia/algoliasearch-client-php": "^1.11",
+        "barryvdh/laravel-dompdf": "^0.7.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
